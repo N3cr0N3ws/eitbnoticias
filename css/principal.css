@@ -215,7 +215,19 @@ a, a:hover {
   margin: 0;
 }
 
-
+/* Data */
+.data {
+  margin-top: 16px;
+  background-color: #000;
+  border-radius: 16px;
+  padding: 16px;
+}
+.data h4 {
+  color: #fff;
+}
+.data p {
+  color: #fff;
+}
 
 
 /* Fuente de la noticia */

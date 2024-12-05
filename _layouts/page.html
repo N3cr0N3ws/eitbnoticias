@@ -72,6 +72,21 @@ layout: default
       </div>
       {% endif %}
 
+      <!-- Data -->
+     {% assign datos_relevantes_count = page.datos_relevantes | size %}
+      {% if datos_relevantes_count > 0 %}
+      <h2>Datos relevantes </h2>
+      <div class="data">
+        {% for data in page.datos_relevantes %}
+        <div>
+          <p><strong>{{ data.fuente }}</strong><br /><i>{{ data.dato }}</i>
+          </p>
+          
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       <!-- Expected impact -->
       {% assign impacto_esperado_count = page.impacto_esperado | size %}
       {% if impacto_esperado_count > 0 %}       
